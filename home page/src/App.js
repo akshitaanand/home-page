@@ -12,7 +12,7 @@ import Routes from './Routes';
 export default function App() {
   return (
     <div id="container">
-        <div id="header">
+        <div id="header" className="sticky">
           <Header />
         </div>
         <Routes />
