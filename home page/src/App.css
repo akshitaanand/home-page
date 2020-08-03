@@ -73,6 +73,12 @@ body {
   margin-bottom: 10px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .flipping-cards {
   display: flex;
   flex-direction: row;
