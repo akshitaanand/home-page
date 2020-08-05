@@ -79,7 +79,6 @@ autoSliding: {interval: "4s"}
               buttonSetting={buttonSetting}
               sliderBoxStyle={sliderBoxStyle}
               itemsStyle={itemsStyle}
-              textBoxStyle={textBoxStyle}
              />
           </div>
         </div>
