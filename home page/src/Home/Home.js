@@ -3,8 +3,54 @@ import { Button, Container, Row, Col } from "react-bootstrap";
 import history from "./../history";
 import "./Home.css";
 import ReactPlayer from "react-player";
+import CarouselSlider from "react-carousel-slider";
 
 class Home extends Component {
+  
+let data = [
+  {
+
+    imgSrc: "https://i.imgur.com/d5aiXJP.jpg"
+  },
+  {
+    imgSrc: "https://i.imgur.com/pgCzueK.jpg"
+  },
+  {
+
+    imgSrc: "https://i.imgur.com/7nbAJ0C.jpg"
+  },
+  {
+    imgSrc: "https://i.imgur.com/L75otV6.jpg"
+  },
+  {
+    imgSrc: "https://i.imgur.com/qkPMr9D.jpg"
+  }
+];
+
+let buttonSetting = {
+  placeOn: "middle-inside"
+,hoverEvent: true
+};
+
+let sliderBoxStyle = {
+  height: "250px"
+  //, width: "200px"
+  // , background: "tranparent"
+};
+
+let itemsStyle = {
+  // ,height: "100%", padding: "0px"
+  // , padding: "15px"
+  // , background: "#FFCA28"
+  // , borderRadius: "4px"
+  // , margin: "0px 0px", padding: "0px"
+};
+
+let manner = {
+autoSliding: {interval: "4s"}
+, duration: "0.2s"
+};
+
   render() {
     return (
       <div>
@@ -26,6 +72,16 @@ class Home extends Component {
         </div>
         <div className="first">
           <h3>Sliding Images</h3>
+          <div> 
+            <CarouselSlider
+              slideItems={data}
+              manner={manner}
+              buttonSetting={buttonSetting}
+              sliderBoxStyle={sliderBoxStyle}
+              itemsStyle={itemsStyle}
+              textBoxStyle={textBoxStyle}
+             />
+          </div>
         </div>
         <div className="second">
           <h3>Featured Products</h3>
