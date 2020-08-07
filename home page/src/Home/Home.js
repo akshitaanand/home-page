@@ -7,25 +7,14 @@ import CarouselSlider from "react-carousel-slider";
 
 class Home extends Component {
   
-let data = [
-  {
+let data = {
 
-    imgSrc: "https://i.imgur.com/d5aiXJP.jpg"
-  },
-  {
-    imgSrc: "https://i.imgur.com/pgCzueK.jpg"
-  },
-  {
-
-    imgSrc: "https://i.imgur.com/7nbAJ0C.jpg"
-  },
-  {
-    imgSrc: "https://i.imgur.com/L75otV6.jpg"
-  },
-  {
-    imgSrc: "https://i.imgur.com/qkPMr9D.jpg"
-  }
-];
+   "https://i.imgur.com/d5aiXJP.jpg",
+   "https://i.imgur.com/pgCzueK.jpg",
+   "https://i.imgur.com/7nbAJ0C.jpg",
+   "https://i.imgur.com/L75otV6.jpg",
+   "https://i.imgur.com/qkPMr9D.jpg"
+  };
 
 let buttonSetting = {
   placeOn: "middle-inside"
